@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartik Jain - Mechanical Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 40px rgba(0,0,0,0.3);
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header .subtitle {
+            font-size: 1.3em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .contact-info a:hover {
+            opacity: 0.7;
+        }
+
+        nav {
+            background: #2c3e50;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 5px 10px;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        section {
+            padding: 60px 40px;
+            border-bottom: 1px solid #eee;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #3498db;
+            display: inline-block;
+        }
+
+        .education-item, .experience-item, .project-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .education-item h3, .experience-item h3, .project-item h3 {
+            color: #2c3e50;
+            font-size: 1.4em;
+            margin-bottom: 8px;
+        }
+
+        .meta {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .skill-category h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .skill-category ul {
+            list-style: none;
+        }
+
+        .skill-category li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .skill-category li:before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        .courses-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .course-tag {
+            background: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 0.95em;
+        }
+
+        .achievements-list {
+            list-style: none;
+        }
+
+        .achievements-list li {
+            padding: 15px 0;
+            padding-left: 30px;
+            position: relative;
+            font-size: 1.1em;
+        }
+
+        .achievements-list li:before {
+            content: "🏆";
+            position: absolute;
+            left: 0;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            section {
+                padding: 40px 20px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kartik Jain</h1>
+            <div class="subtitle">M.Tech Mechanical Thermo-Fluid Engineering</div>
+            <div class="subtitle">IIT Hyderabad</div>
+            <div class="contact-info">
+                <a href="mailto:me24mtech11029@iith.ac.in">📧 me24mtech11029@iith.ac.in</a>
+                <a href="tel:+917224053138">📱 +91 722 405 3138</a>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#extracurricular">Activities</a></li>
+            </ul>
+        </nav>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>M.Tech in Mechanical Thermo-Fluid Engineering - TA</h3>
+                <div class="meta">IIT Hyderabad | 2024 - 2026 | CGPA: 7.82</div>
+            </div>
+            <div class="education-item">
+                <h3>BTech in Mechanical Engineering</h3>
+                <div class="meta">Shri GS Institute of Technology and Science | 2019 - 2023 | CGPA: 7.63</div>
+            </div>
+            <div class="education-item">
+                <h3>Class XII - CBSE</h3>
+                <div class="meta">St. Mary's School | 2018 | 85.60%</div>
+            </div>
+            <div class="education-item">
+                <h3>Class X - CBSE</h3>
+                <div class="meta">St. Mary's School | 2016 | CGPA: 9.60</div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience & Leadership</h2>
+            <div class="experience-item">
+                <h3>Head Placement Coordinator</h3>
+                <div class="meta">Office of Career Services, IIT Hyderabad | January 2025 - Present</div>
+            </div>
+            <div class="experience-item">
+                <h3>Teaching Assistant</h3>
+                <div class="meta">Department of Mechanical and Aerospace Engineering, IIT Hyderabad | August 2024 - Present</div>
+            </div>
+            <div class="experience-item">
+                <h3>Lean Engineer</h3>
+                <div class="meta">Gemba Concepts | January 2023 - April 2023</div>
+                <p>Contributed to lean manufacturing strategies and process streamlining.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Vacation Trainee</h3>
+                <div class="meta">Royal Hyundai | April 2022 - August 2022</div>
+                <p>Gained hands-on experience in organizational management and teamwork.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Final Year Student Representative</h3>
+                <div class="meta">Shri G S Institute of Technology & Science | 2022 - 2023</div>
+            </div>
+            <div class="experience-item">
+                <h3>Steering Committee Member</h3>
+                <div class="meta">Team GSRacers | 2019 - 2021</div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>Advanced Heat Transfer</li>
+                        <li>Chemical Kinetics (Chemkin & Cantera)</li>
+                        <li>Computational Fluid Dynamics (CFD)</li>
+                        <li>Finite Element Analysis (FEA)</li>
+                        <li>Automotive Systems</li>
+                        <li>Lean Manufacturing</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Software & Tools</h3>
+                    <ul>
+                        <li>ANSYS (Fluid & Structural Analysis)</li>
+                        <li>CHEMKIN</li>
+                        <li>Creo Parametric (3D Modeling)</li>
+                        <li>AutoCAD (2D/3D/PT)</li>
+                        <li>MS Office Suite</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Strategic Planning</li>
+                        <li>Project Management</li>
+                        <li>Team Collaboration</li>
+                        <li>Good Communication</li>
+                        <li>Operational Efficiency</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h2 style="margin-top: 50px;">Relevant Courses</h2>
+            <div class="courses-list">
+                <span class="course-tag">Computational Fluid Dynamics (CFD)</span>
+                <span class="course-tag">Advanced Heat Transfer</span>
+                <span class="course-tag">Compressible Flow and its Computation</span>
+                <span class="course-tag">Incompressible Fluid Flow</span>
+                <span class="course-tag">Introduction to Combustion and Reactor Models</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>MTech Thesis: Experimental and Computational Analysis of Pollutant Emissions in Gas Turbine Combustor</h3>
+                <p><strong>Focus:</strong> CHEMKIN Modeling and Validation using Jet A1 Fuel</p>
+                <ul style="margin-top: 10px; margin-left: 20px;">
+                    <li>Conducting real-time Jet A1 combustion experiments in lab-scale gas turbine combustor under varied conditions (1-10 atm, 800-2800 K, Φ = 0.6-1.4)</li>
+                    <li>Measuring NOx, CO/CO₂, UHC emissions and flame radicals using advanced techniques</li>
+                    <li>Simulating combustion using JetSurF 2.0 mechanisms in CHEMKIN (PSR/PFR models)</li>
+                    <li>Validating predictions against experimental data and extending to CFD-coupled simulations</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>Gas Extraction Probe Analysis: Experimental Validation Against CFD Simulations</h3>
+                <ul style="margin-left: 20px;">
+                    <li>Investigated probe performance through experimental measurements and ANSYS Fluent CFD simulations</li>
+                    <li>Compared experimental data with CFD results to assess accuracy and identify discrepancies</li>
+                    <li>Proposed design improvements and modeling guidelines for enhanced extraction efficiency</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>Convective Heat Transfer and Cooling Load Estimation for IIT Hyderabad Hostel Building</h3>
+                <ul style="margin-left: 20px;">
+                    <li>Analyzed heat exchange in hot, semi-arid climate with high solar radiation</li>
+                    <li>Investigated convective heat transfer coefficients for building envelopes</li>
+                    <li>Quantified total heat transfer rates to support energy-efficient HVAC system design</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>Smart Bed for Paralyzed Patients with Automated Waste Management</h3>
+                <ul style="margin-left: 20px;">
+                    <li>Auto waste collection with detachable pot/toilet system</li>
+                    <li>Built-in deodorizer with button/remote control for patient independence</li>
+                    <li>Anti-bacterial surfaces with ergonomic design for comfort</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>Low-Cost Portable Air Purifier and Humidifier</h3>
+                <ul style="margin-left: 20px;">
+                    <li>Combined air purification (HEPA/carbon filter) with humidification in compact device</li>
+                    <li>Low-cost design using affordable parts for small rooms</li>
+                    <li>Smart auto-control adjusting fan speed and humidity based on sensor data</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>Plant OEE Improvement in Roto and Flexo Printing Organization</h3>
+                <ul style="margin-left: 20px;">
+                    <li>Achieved 40% improvement in OEE and 10% reduction in process waste</li>
+                    <li>Applied industrial engineering techniques: SMED, 5S, and Time Study</li>
+                    <li>Enhanced productivity through layout optimization and manpower tracking</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="achievements">
+            <h2>Achievements & Recognition</h2>
+            <ul class="achievements-list">
+                <li>Head Placement Coordinator at IIT Hyderabad Office of Career Services</li>
+                <li>Teaching Assistant in Department of Mechanical and Aerospace Engineering</li>
+                <li>Steering Committee Member of Team GSRacers Formula Student Team</li>
+                <li>Successfully implemented KRA & KPI framework achieving 20% productivity increase</li>
+                <li>Achieved 40% OEE improvement in industrial printing operations</li>
+            </ul>
+        </section>
+
+        <section id="extracurricular">
+            <h2>Extracurricular Activities</h2>
+            <div class="experience-item">
+                <h3>Placements Volunteering</h3>
+                <div class="meta">Office of Career Services, IIT Hyderabad | 1 Year</div>
+            </div>
+            <div class="experience-item">
+                <h3>Member of SAEINDIA</h3>
+                <div class="meta">Student Member | 2019 - 2024</div>
+            </div>
+            <div class="experience-item">
+                <h3>Steering Committee Member</h3>
+                <div class="meta">Team GS Racers | 2019 - 2023</div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Kartik Jain. All rights reserved.</p>
+            <p>M.Tech Mechanical Thermo-Fluid Engineering | IIT Hyderabad</p>
+        </footer>
+    </div>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+</body>
+</html>
